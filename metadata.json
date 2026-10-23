@@ -1,0 +1,6 @@
+{
+  "name": "Toonify",
+  "description": "AI video community and creation studio to watch, remix, and generate AI cartoon videos and animated shorts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

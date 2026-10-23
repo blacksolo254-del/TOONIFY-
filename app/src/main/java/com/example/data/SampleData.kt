@@ -1,0 +1,350 @@
+package com.example.data
+
+import com.example.R
+import com.example.model.AiVideo
+import com.example.model.VideoCategory
+import com.example.model.VideoComment
+import com.example.model.WeeklyCreatorLeaderboardEntry
+
+object SampleData {
+    fun getInitialVideos(): List<AiVideo> = listOf(
+        AiVideo(
+            id = "v1",
+            title = "CYBERPULSE: Shinjuku Neon Rooftop Chase (Episode 1)",
+            description = "Generated with Toonify AI Video Studio. A magical cyber girl navigates the neon rain of Neo-Tokyo while evading rogue surveillance drones.",
+            creatorName = "NeoAnime Labs",
+            creatorHandle = "@neoanime",
+            creatorSubscribers = "842K ⭐",
+            isVerifiedCreator = true,
+            thumbnailResId = R.drawable.img_thumb_cyber_anime,
+            category = VideoCategory.CYBERPUNK,
+            durationSeconds = 142,
+            durationFormatted = "2:22",
+            viewsCount = 1240000,
+            viewsFormatted = "1.2M",
+            likesCount = 89400,
+            likesFormatted = "89.4K",
+            commentsCount = 1420,
+            uploadedAgo = "3 hours ago",
+            weeklyRank = 1,
+            weeklyPoints = 9840,
+            weeklyPrizeBadge = "🏆 #1 Toon of the Week (+2,500 Credits)",
+            aiPrompt = "Cinematic anime screenshot of a cybernetic magical girl with glowing twin ponytails standing on rain-slicked Tokyo neon skyscraper rooftop, holographic cherry blossom petals fluttering in the wind, dramatic rim lighting, Makoto Shinkai aesthetic, smooth 60fps kinetic motion.",
+            aiNegativePrompt = "blurry, low quality, jittery artifacts, deformed fingers, extra limbs, bad anatomy, text watermarks, 2d static, washed out colors",
+            aiModelUsed = "Toonify Neural Gen-3 (60fps)",
+            cameraMotion = "FPV Drone Sweep + Orbit",
+            seed = 8493021841L,
+            guidanceScale = 8.2f,
+            tags = listOf("Anime", "Cyberpunk", "AIAnimation", "NeoTokyo", "ToonifyStudio"),
+            comments = listOf(
+                VideoComment(
+                    id = "c1",
+                    authorName = "PixelMaster",
+                    authorBadge = "Top Prompter",
+                    text = "The temporal consistency in the hair physics is mind-blowing! What guidance scale did you use?",
+                    timeAgo = "2h ago",
+                    likesCount = 342,
+                    isLiked = false,
+                    isHeartedByCreator = true
+                ),
+                VideoComment(
+                    id = "c2",
+                    authorName = "AuraAnimator",
+                    authorBadge = "",
+                    text = "Remixing this prompt right now in the Studio! The reflection pass on the wet rooftop is unreal.",
+                    timeAgo = "1h ago",
+                    likesCount = 118,
+                    isLiked = true,
+                    isHeartedByCreator = false
+                ),
+                VideoComment(
+                    id = "c3",
+                    authorName = "GhibliFan99",
+                    authorBadge = "",
+                    text = "Can't believe this was made with prompt-to-video in under 2 minutes. The sound design matches the visual pacing so well.",
+                    timeAgo = "45m ago",
+                    likesCount = 64,
+                    isLiked = false,
+                    isHeartedByCreator = false
+                )
+            )
+        ),
+        AiVideo(
+            id = "v2",
+            title = "Ignis: The Baby Dragon Who Loves Toasted Marshmallows",
+            description = "A heartwarming 3D animated short generated with Toonify. Little Ignis tries to toast his first marshmallow without incinerating the whole camp site!",
+            creatorName = "Whimsical Studios",
+            creatorHandle = "@whimsical_toons",
+            creatorSubscribers = "1.4M ⭐",
+            isVerifiedCreator = true,
+            thumbnailResId = R.drawable.img_thumb_pixar_dragon,
+            category = VideoCategory.PIXAR_3D,
+            durationSeconds = 88,
+            durationFormatted = "1:28",
+            viewsCount = 3800000,
+            viewsFormatted = "3.8M",
+            likesCount = 275000,
+            likesFormatted = "275K",
+            commentsCount = 4280,
+            uploadedAgo = "1 day ago",
+            weeklyRank = 2,
+            weeklyPoints = 8920,
+            weeklyPrizeBadge = "🥈 #2 Visual Masterpiece (+1,500 Credits)",
+            aiPrompt = "Whimsical 3D Pixar animation of a baby emerald green dragon with big expressive purple eyes sitting by campfire, holding a wooden stick with a marshmallow, accidentally sneezing a tiny bright spark of fire, subsurface scattering skin, volumetric warm lighting, cozy forest background.",
+            aiNegativePrompt = "scary, dark, realistic reptile skin, horror, distorted eyes, bad proportions, flicker",
+            aiModelUsed = "PixarDiffusion 4K v2",
+            cameraMotion = "Slow Dolly Zoom + Macro Focus",
+            seed = 9182374012L,
+            guidanceScale = 7.0f,
+            tags = listOf("Pixar3D", "CuteDragon", "Whimsical", "KidsToons", "ToonifyAI"),
+            comments = listOf(
+                VideoComment(
+                    id = "c4",
+                    authorName = "StoryCraftAI",
+                    authorBadge = "Verified Director",
+                    text = "That little sneeze anticipation animation at 0:42 is textbook 12 principles of animation. Stellar prompt engineering!",
+                    timeAgo = "18h ago",
+                    likesCount = 952,
+                    isLiked = true,
+                    isHeartedByCreator = true
+                ),
+                VideoComment(
+                    id = "c5",
+                    authorName = "LunaBakes",
+                    authorBadge = "",
+                    text = "My kids made me replay this 10 times in a row haha!",
+                    timeAgo = "12h ago",
+                    likesCount = 189,
+                    isLiked = false,
+                    isHeartedByCreator = false
+                )
+            )
+        ),
+        AiVideo(
+            id = "v3",
+            title = "Chef Squeaks & The Great Wobbling Pancake Stack",
+            description = "Classic tactile stop-motion claymation generated entirely via AI prompt engineering! Watch Chef Squeaks try to balance the ultimate maple syrup feast.",
+            creatorName = "Clay & Wonder",
+            creatorHandle = "@claywonder",
+            creatorSubscribers = "490K ⭐",
+            isVerifiedCreator = true,
+            thumbnailResId = R.drawable.img_thumb_clay_baking,
+            category = VideoCategory.CLAYMATION,
+            durationSeconds = 115,
+            durationFormatted = "1:55",
+            viewsCount = 920000,
+            viewsFormatted = "920K",
+            likesCount = 74000,
+            likesFormatted = "74K",
+            commentsCount = 890,
+            uploadedAgo = "2 days ago",
+            weeklyRank = 3,
+            weeklyPoints = 7610,
+            weeklyPrizeBadge = "🥉 #3 Stop-Motion Star (+800 Credits)",
+            aiPrompt = "Aardman style stop-motion claymation of a cheerful animal chef mouse balancing an impossibly tall wobbly stack of golden pancakes, tactile plasticine clay textures, visible fingerprint indentations, cozy warm kitchen with vintage copper pots, 12fps quirky animation timing.",
+            aiNegativePrompt = "smooth CGI, plastic gloss, digital airbrush, 2D vector, flat lighting, unrealistic motion",
+            aiModelUsed = "ClayMotion Latent-X",
+            cameraMotion = "Low Angle Wobble Tracking",
+            seed = 4482019485L,
+            guidanceScale = 7.8f,
+            tags = listOf("Claymation", "StopMotion", "AardmanStyle", "ChefMouse", "Comedy"),
+            comments = listOf(
+                VideoComment(
+                    id = "c6",
+                    authorName = "StopMoEnthusiast",
+                    authorBadge = "",
+                    text = "The clay deformation on the pancake squish is uncanny. Did you specify frame rate in the negative prompt?",
+                    timeAgo = "1d ago",
+                    likesCount = 210,
+                    isLiked = false,
+                    isHeartedByCreator = true
+                )
+            )
+        ),
+        AiVideo(
+            id = "v4",
+            title = "Captain Whiskers: Flight Over the Floating Sakura Isles",
+            description = "A serene Studio Ghibli-inspired adventure. Captain Whiskers steers his wooden steampunk sky-cutter through pastel cherry blossom clouds.",
+            creatorName = "Studio Dreamscape",
+            creatorHandle = "@dreamscape_ai",
+            creatorSubscribers = "1.1M ⭐",
+            isVerifiedCreator = true,
+            thumbnailResId = R.drawable.img_thumb_surreal_cat,
+            category = VideoCategory.SURREAL,
+            durationSeconds = 165,
+            durationFormatted = "2:45",
+            viewsCount = 2100000,
+            viewsFormatted = "2.1M",
+            likesCount = 192000,
+            likesFormatted = "192K",
+            commentsCount = 3100,
+            uploadedAgo = "3 days ago",
+            weeklyRank = 4,
+            weeklyPoints = 6450,
+            weeklyPrizeBadge = "✨ Top 5 Rising Toon (+400 Credits)",
+            aiPrompt = "Studio Ghibli aesthetic of a giant fluffy calico cat wearing an aviator leather pilot helmet with brass goggles, steering a wooden steampunk airship over floating islands covered in blooming pink cherry blossom trees, hand-painted watercolor sky, gentle floating lanterns, peaceful whimsical adventure.",
+            aiNegativePrompt = "hyper-realistic photograph, dark gritty realism, sharp angular modern metal, CGI plastic, glitch",
+            aiModelUsed = "GhibliDiffusion Dream-2",
+            cameraMotion = "Smooth Panoramic Aerial Glider",
+            seed = 7129384021L,
+            guidanceScale = 8.0f,
+            tags = listOf("StudioGhibli", "AnimeAirship", "CalicoCat", "Relaxing", "SakuraClouds"),
+            comments = listOf(
+                VideoComment(
+                    id = "c7",
+                    authorName = "CozyVibesOnly",
+                    authorBadge = "",
+                    text = "This put me in the most peaceful mood ever. The watercolor clouds look like they were painted by hand.",
+                    timeAgo = "2d ago",
+                    likesCount = 412,
+                    isLiked = true,
+                    isHeartedByCreator = true
+                )
+            )
+        ),
+        AiVideo(
+            id = "v_user_1",
+            title = "Mecha Ronin: Rain & Neon Blade (Official Trailer)",
+            description = "Created in Toonify AI Studio. A cybernetic ronin awakens in an abandoned Neo-Kyoto temple surrounded by automated combat sentinels.",
+            creatorName = "You (ToonMaster)",
+            creatorHandle = "@toonmaster",
+            creatorSubscribers = "124.8K ⭐",
+            creatorStars = "124.8K ⭐",
+            isStarred = true,
+            isVerifiedCreator = true,
+            thumbnailResId = R.drawable.img_thumb_cyber_anime,
+            category = VideoCategory.CYBERPUNK,
+            durationSeconds = 95,
+            durationFormatted = "1:35",
+            viewsCount = 240000,
+            viewsFormatted = "240K",
+            likesCount = 34200,
+            likesFormatted = "34.2K",
+            commentsCount = 680,
+            uploadedAgo = "1 day ago",
+            isLiked = true,
+            isSaved = true,
+            isUserUploaded = true,
+            weeklyRank = 4,
+            weeklyPoints = 24600,
+            weeklyPrizeBadge = "🏆 #4 Global Weekly Creator (+500 Credits)",
+            aiPrompt = "Hyper-detailed cinematic anime of a chrome cybernetic samurai ronin drawing an electromagnetic plasma blade in heavy rainy cyberpunk alley, volumetric neon reflection puddles, 60fps fluid combat choreography.",
+            aiNegativePrompt = "grain, stutter, bad lighting, deformed limbs",
+            aiModelUsed = "Toonify Neural Gen-3 (60fps)",
+            cameraMotion = "Bullet-Time 360 Orbit + Dynamic Dutch Angle",
+            seed = 4589210482L,
+            guidanceScale = 8.5f,
+            tags = listOf("MechaRonin", "Cyberpunk", "ToonifyStudio", "AIAnimation", "ActionAnime"),
+            comments = listOf(
+                VideoComment(
+                    id = "c_u1",
+                    authorName = "AnimeDirector_Z",
+                    authorBadge = "Pro Creator",
+                    text = "The reflection pass on the armor is sensational! Deserves Top 3 on this week's leaderboard!",
+                    timeAgo = "14h ago",
+                    likesCount = 92,
+                    isLiked = true,
+                    isHeartedByCreator = true
+                )
+            )
+        ),
+        AiVideo(
+            id = "v_user_2",
+            title = "Chibi Corgi Bakery & The Runaway Croissant",
+            description = "Created in Toonify AI Studio. A determined baker corgi in chef's hat chases an enchanted bouncy pastry across a colorful Paris street.",
+            creatorName = "You (ToonMaster)",
+            creatorHandle = "@toonmaster",
+            creatorSubscribers = "124.8K ⭐",
+            creatorStars = "124.8K ⭐",
+            isStarred = true,
+            isVerifiedCreator = true,
+            thumbnailResId = R.drawable.img_thumb_clay_baking,
+            category = VideoCategory.CLAYMATION,
+            durationSeconds = 64,
+            durationFormatted = "1:04",
+            viewsCount = 185000,
+            viewsFormatted = "185K",
+            likesCount = 22400,
+            likesFormatted = "22.4K",
+            commentsCount = 340,
+            uploadedAgo = "3 days ago",
+            isLiked = true,
+            isUserUploaded = true,
+            weeklyRank = 4,
+            weeklyPoints = 14200,
+            weeklyPrizeBadge = "🌟 Creator Choice Feature",
+            aiPrompt = "Adorable stop-motion claymation of a fluffy corgi puppy wearing a white baker hat and striped apron chasing a giant golden smiling croissant rolling down cobblestone path, charming handmade clay textures, tactile finger impressions, warm daylight.",
+            aiNegativePrompt = "smooth digital render, glossy plastic, distorted anatomy",
+            aiModelUsed = "AardmanClay Diffusion 4K",
+            cameraMotion = "Low Angle Ground Tracking Pan",
+            seed = 8740192418L,
+            guidanceScale = 7.5f,
+            tags = listOf("Claymation", "Corgi", "CuteAnimals", "StopMotion", "ToonifyStudio"),
+            comments = listOf(
+                VideoComment(
+                    id = "c_u2",
+                    authorName = "StopMotionFanatic",
+                    authorBadge = "",
+                    text = "The tactile clay fingerprints on the croissant make this look 100% authentic stop motion!",
+                    timeAgo = "1d ago",
+                    likesCount = 45,
+                    isLiked = false,
+                    isHeartedByCreator = true
+                )
+            )
+        )
+    )
+
+    fun getWeeklyTopCreators(): List<WeeklyCreatorLeaderboardEntry> = listOf(
+        WeeklyCreatorLeaderboardEntry(
+            rank = 1,
+            creatorName = "NeoAnime Labs",
+            creatorHandle = "@neoanime",
+            starsCount = "842K ⭐",
+            starsGainedThisWeek = 14200,
+            isVerified = true,
+            topVideoTitle = "CYBERPULSE: Shinjuku Neon Rooftop Chase",
+            prizeCreditsReward = 2500
+        ),
+        WeeklyCreatorLeaderboardEntry(
+            rank = 2,
+            creatorName = "Whimsical Studios",
+            creatorHandle = "@whimsical_toons",
+            starsCount = "1.4M ⭐",
+            starsGainedThisWeek = 12800,
+            isVerified = true,
+            topVideoTitle = "Ignis: The Baby Dragon Who Loves Toasted Marshmallows",
+            prizeCreditsReward = 1500
+        ),
+        WeeklyCreatorLeaderboardEntry(
+            rank = 3,
+            creatorName = "Clay & Wonder",
+            creatorHandle = "@claywonder",
+            starsCount = "490K ⭐",
+            starsGainedThisWeek = 8900,
+            isVerified = true,
+            topVideoTitle = "Chef Squeaks & The Great Wobbling Pancake Stack",
+            prizeCreditsReward = 800
+        ),
+        WeeklyCreatorLeaderboardEntry(
+            rank = 4,
+            creatorName = "You (ToonMaster)",
+            creatorHandle = "@toonmaster",
+            starsCount = "124.8K ⭐",
+            starsGainedThisWeek = 1420,
+            isVerified = true,
+            topVideoTitle = "Mecha Ronin: Rain & Neon Blade",
+            prizeCreditsReward = 500
+        ),
+        WeeklyCreatorLeaderboardEntry(
+            rank = 5,
+            creatorName = "Studio Dreamscape",
+            creatorHandle = "@dreamscape_ai",
+            starsCount = "1.1M ⭐",
+            starsGainedThisWeek = 6400,
+            isVerified = true,
+            topVideoTitle = "Captain Whiskers: Flight Over the Floating Sakura Isles",
+            prizeCreditsReward = 400
+        )
+    )
+}
